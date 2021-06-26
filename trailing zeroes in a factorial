@@ -1,0 +1,9 @@
+int Solution::trailingZeroes(int n) {
+    int t=0;
+    while (n>=5)
+    {
+        n=n/5;
+        t=t+n;
+    }
+    return t;
+}
